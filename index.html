@@ -6,8 +6,211 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Full Stack Portfolio</title>
+    <style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+  }
+
+  header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    text-align:center;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  main {
+    padding-top:80px;
+    align-items: center;
+  }
+
+.full-stack {
+  background-color:lightseagreen;
+  padding: 100;
+  margin: 20px 0;
+  font-size: 70;
+  width: 100%;
+  min-height: 20;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.full-stack p {
+    font-size: 30px;
+    text-align: center; 
+}
+
+.full-stack h1 {
+    font-size: 30px;
+    text-align: center;
+}
+  section {
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+#about {
+  font-size: 30px;
+  text-align:justify;
+}
+
+  .portfolio {
+    text-align: center; 
+    background-color: #f8f8f8; 
+    padding: 20px 0; 
+    text-align: center;
+  }
+
+  #portfolio h1 {
+    color: #d81b60; 
+    margin-bottom: 20px; 
+}
+  
+
+  .portfolio-item {
+    width: 30%; 
+    display: inline-block; 
+    margin: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    padding: 20px; 
+    background-color: #fff; 
+    border: 2px solid #d81b60; 
+
+  }
+
+  .portfolio-item button,
+  .portfolio-item a {
+    background-color: #d81b60; 
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    display: inline-block; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.portfolio-item a {
+    background-color: transparent; 
+    color: #d81b60; 
+}
+
+  a {
+    color:blue;
+    text-decoration:none;
+  }
+
+  a:hover {
+    text-decoration:underline;
+  }
+
+  footer {
+    background-color:lightslategrey;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .github-link {
+    display:contents;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      display: block;
+      text-align: left;
+    }
+
+    header a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+    </style>
   </head>
   <body>
+    <header>
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#experience">Experience</a>
+    </header>
+    <main>
+      <section>
+        <div class="full-stack">
+          <h1>Hiring A Full-Stack Developer</h1>
+          <p>I have experience with React, NodeJS, and TypeScript, I would love to work at an innovative and eco-friendly start-up in the sustainable energy sector</p>
+        </div>
+        </section>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>Greetings and welcome to my portfolio! I have extensive experience with JavaScript, Python, and React as a Full Stack Developer. I have years of experience specialising in the development of streamlined web applications. Examine my portfolio to observe how I integrate back-end functionality with front-end design. Let's collaborate and produce something extraordinary!</p>
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>Javascript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>NodeJS</li>
+        </ul>
+      </section>
+      <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="portfolio-item">
+          <h2>Full stack development</h2>
+          <p>An innovative e-commerce platform, EcoStore is committed to selling sustainable products. In my capacity as a full stack developer, I led the development process from its inception, ensuring the platform's architecture incorporated sustainable practices and green technologies.</p>
+          <button>Read More</button>
+          <a href="#" class="github-link">GitHub Repo</a>
+        </div>
+        <div class="portfolio-item">
+          <h2>Full Stack development</h2>
+          <p>An innovative e-commerce platform, EcoStore is committed to selling sustainable products. In my capacity as a full stack developer, I led the development process from its inception, ensuring the platform's architecture incorporated sustainable practices and green technologies.</p>
+          <button>Read More</button>
+          <a href="#" class="github-link">GitHub Repo</a>
+        </div>
+        <div class="portfolio-item">
+          <h2>Full Stack development</h2>
+          <p>An innovative e-commerce platform, EcoStore is committed to selling sustainable products. In my capacity as a full stack developer, I led the development process from its inception, ensuring the platform's architecture incorporated sustainable practices and green technologies.</p>
+          <button>Read More</button>
+          <a href="#" class="github-link">GitHub Repo</a>
+        </div>
+      </section>
+      <section id="experience">
+        <h1>Experience</h1>
+        <h2>Full-Stack Web Developer</h2>
+        <p>In addition to other responsibilities, the Full Stack Developer will be tasked with the development and design of front-end web architecture, the implementation of responsive design principles for applications, and collaboration with graphic designers to implement web design elements. Additionally, you will be tasked with overseeing a project from inception to completion, which will demand your attention to detail and organisational abilities.
+
+          Duties and obligations:
+          
+          Front-end website architecture development. Developing user interfaces that are intuitive and seamless through the design of user interactions on web pages.
+          
+          Developing web application user interactions. Incorporating visual components that compel users to interact via their web browser.
+          
+          Developing application backends for websites. Developing servers and databases to ensure functionality and mobile phone cross-platform optimisation.</p>
+        <h2>Full-Stack Web Developer</h2>
+        <p>In addition to other responsibilities, the Full Stack Developer will be tasked with the development and design of front-end web architecture, the implementation of responsive design principles for applications, and collaboration with graphic designers to implement web design elements. Additionally, you will be tasked with overseeing a project from inception to completion, which will demand your attention to detail and organisational abilities.
+
+          Duties and obligations:
+          
+          Front-end website architecture development. Developing user interfaces that are intuitive and seamless through the design of user interactions on web pages.
+          
+          Developing web application user interactions. Incorporating visual components that compel users to interact via their web browser.
+          
+          Developing application backends for websites. Developing servers and databases to ensure functionality and mobile phone cross-platform optimisation.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Ella Magnifica</p>
+    </footer>
 
   </body>
 </html>
